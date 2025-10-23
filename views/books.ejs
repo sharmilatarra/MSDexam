@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Books</title>
+</head>
+<body>
+    <h3>All books are listed here!!</h3>
+    <a href="/books/new">Create new book</a>
+    <hr>
+
+    <% for (book of books) { %>
+        <div style="border:1px solid black; width:300px; text-align:center; margin:10px; padding:5px;">
+            <h3 style="color:darkblue;">Title: <%= book.title %></h3>
+            <p>Author: <%= book.author %></p>
+            <p>Price: ₹<%= book.price %></p>
+        </div>
+    <% } %>
+</body>
+</html>
